@@ -1,0 +1,58 @@
+
+
+.navbar-dark {
+  background: linear-gradient(90deg, #343a40 0%, #212529 100%); /* Gradiente oscuro */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Sombra para profundidad */
+}
+
+.navbar-dark .navbar-brand {
+  font-weight: bold; /* Texto en negrita para destacar */
+  font-size: 1.5rem; /* Tamaño de fuente más grande para el logo */
+  margin-right: 2rem; /* Separación del logo del resto del contenido */
+}
+
+.navbar-dark .nav-link,
+.navbar-dark .nav-item .dropdown-item {
+  padding: 1rem 1.5rem; /* Aumentar el padding para más espacio */
+  font-size: 1.2rem; /* Tamaño de fuente más grande */
+  transition: color 0.3s ease, background-color 0.3s ease; /* Transición suave */
+}
+
+.navbar-dark .nav-link:hover,
+.navbar-dark .nav-item .dropdown-item:hover {
+
+  border-radius: 4px; /* Bordes redondeados para un efecto más suave */
+}
+
+/* Estilo específico para dropdowns */
+.nav-dropdown {
+  position: relative;
+}
+
+.nav-dropdown .dropdown-menu {
+
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Sombra para profundidad */
+}
+
+.nav-dropdown .dropdown-menu .dropdown-item {
+  padding: 1rem 1.5rem; /* Aumentar el padding para más espacio */
+  font-size: 1.2rem; /* Tamaño de fuente más grande */
+  transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.nav-dropdown .dropdown-menu .dropdown-item:hover {
+  background-color: #ff4d4d; /* Color de fondo al pasar el mouse */
+}
+
+/* Espaciado adicional entre elementos */
+.navbar-nav {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: nowrap; /* Evitar que los elementos se envuelvan en una nueva línea */
+  justify-content: space-between; /* Distribuir el espacio entre los elementos */
+}
+
+.nav-item {
+  margin: 0 1.5rem; /* Espaciado más grande entre los elementos del nav */
+}
