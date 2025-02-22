@@ -20,6 +20,7 @@ const SpecialPriceForm = () => {
   const { theme } = useTheme(); // Modo oscuro/claro
 
   useEffect(() => {
+    //obtenemos la data 
     const fetchData = async () => {
       setLoading(true);
       try {
@@ -46,6 +47,7 @@ const SpecialPriceForm = () => {
       alert("⚠️ Selecciona un producto y un precio válido.");
       return;
     }
+    //manejamos los evento s
     const success = await addSpecialPrice(formData);
     if (success) {
       alert("✅ Precio especial agregado correctamente");
